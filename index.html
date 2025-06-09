@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura Balneário Camboriú - Fala Cidadão</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importando a fonte Poppins do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Importando ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <img src="https://www.bc.sc.gov.br/img/logo/logo-bc-h-c.svg" alt="Logo Prefeitura Balneário Camboriú" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#" id="nav-inicio">Início</a></li>
+                    <li><a href="#" id="nav-formularios">Formulários</a></li>
+                    <li><a href="#" id="nav-acompanhar">Acompanhar Solicitações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- TELA INICIAL -->
+        <section id="tela-inicial" class="page-section">
+            <div class="container content-container">
+                <div class="text-content">
+                    <a href="#" class="btn-cta" id="btn-enviar-solicitacao">Clique aqui para enviar sua solicitação.</a>
+                    <h1>Fala cidadão</h1>
+                    <p>Essa plataforma foi desenvolvida como forma de melhorar o sistema de protocolos da comunicação entre moradores sobre os problemas urbanos da cidade.</p>
+                </div>
+                <div class="illustration-placeholder">
+                    <!-- Suas imagens de ilustração irão aqui -->
+                    <p class="placeholder-text">(Espaço para as ilustrações)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TELA DE FORMULÁRIO -->
+        <section id="tela-formulario" class="page-section hidden">
+            <div class="container content-container-form">
+                <div class="form-box">
+                    <h2>Por favor preencha o formulário</h2>
+                    <form>
+                        <label for="solicitacao">Descreva sua solicitação com detalhes e fotos (se possível)</label>
+                        <textarea id="solicitacao" rows="4"></textarea>
+                        
+                        <label for="localizacao">Localização (Endereço completo)</label>
+                        <input type="text" id="localizacao">
+
+                        <button type="submit" class="btn-submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="illustration-placeholder-side">
+                    <!-- Suas imagens de ilustração irão aqui -->
+                    <p class="placeholder-text">(Espaço para as ilustrações laterais)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TELA DE ACOMPANHAMENTO -->
+        <section id="tela-acompanhar" class="page-section hidden">
+             <div class="container content-container-form">
+                <div class="form-box">
+                    <h2>Acompanhe aqui sua solicitação</h2>
+                    <form>
+                        <label for="protocolo">Digite o número do seu protocolo:</label>
+                        <input type="text" id="protocolo">
+                        <button type="submit" class="btn-submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="illustration-placeholder-side">
+                    <!-- Suas imagens de ilustração irão aqui -->
+                     <p class="placeholder-text">(Espaço para as ilustrações laterais)</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-section">
+                <p><strong>Ouvidoria sugestões e reclamações</strong></p>
+                <p>ouvidoria@bc.sc.gov.br</p>
+            </div>
+            <div class="footer-section">
+                <p>Rua Dinamarca, 320 - Nações,</p>
+                <p>Balneário Camboriú - SC</p>
+                <p>CEP: 88338-900</p>
+                <p>(47) 3267.7000</p>
+            </div>
+            <div class="footer-section social-icons">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
